@@ -18,7 +18,7 @@ import { Input } from '@/components/ui/input';
 import { authClient } from '@/lib/auth-client';
 import { SignUpSchema } from '@/schemas/auth';
 import { zodResolver } from '@hookform/resolvers/zod';
-import { Loader } from 'lucide-react';
+import { Loader2 } from 'lucide-react';
 import { useRouter } from 'next/navigation';
 import { useTransition } from 'react';
 import { Controller, useForm } from 'react-hook-form';
@@ -120,7 +120,7 @@ export default function SignUpPage() {
             <Button disabled={isPending}>
               {isPending ? (
                 <>
-                  <Loader className="mr-2 h-4 w-4 animate-spin" />
+                  <Loader2 className="mr-2 h-4 w-4 animate-spin" />
                   <span>Creating...</span>
                 </>
               ) : (
