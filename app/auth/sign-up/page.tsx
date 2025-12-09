@@ -74,6 +74,7 @@ export default function SignUpPage() {
                     aria-invalid={fieldState.invalid}
                     placeholder="Enter your name..."
                     {...field}
+                    
                   />
                   {fieldState.invalid && (
                     <FieldError errors={[fieldState.error]} />
@@ -134,7 +135,7 @@ export default function SignUpPage() {
                   href="/auth/login"
                   className="text-purple-300 hover:underline"
                 >
-                  Log in
+                  Login
                 </a>
               </p>
             </div>
